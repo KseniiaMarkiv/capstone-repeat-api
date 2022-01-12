@@ -1,10 +1,12 @@
-class CitiesController < ApplicationController
+class Api::CitiesController < ApplicationController
   before_action :set_city, only: %i[ show update destroy ]
 
   # GET /cities
   # GET /cities.json
   def index
     @cities = City.all
+
+    render json: @cities
   end
 
   # GET /cities/1

@@ -6,3 +6,8 @@
     password: 'strong_password'
   )
 end
+20.times do 
+  City.create(
+    name: Faker::Address.state
+  )
+end

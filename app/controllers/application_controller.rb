@@ -4,6 +4,8 @@ require_relative '../../lib/json_web_token'
 
 class ApplicationController < ActionController::API
 
+  include ActionController::ImplicitRender
+
   def not_found
     render json: { error: 'not found' }
   end

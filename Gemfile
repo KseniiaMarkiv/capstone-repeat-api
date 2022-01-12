@@ -5,6 +5,11 @@ git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '2.7.0'
 
+gem 'jbuilder', '~> 2.11', '>= 2.11.5'
+gem 'mongoid', '~> 7.3', '>= 7.3.3'
+gem 'mongo', '~> 2.17'
+
+
 gem 'bcrypt', '~> 3.1.7'
 gem 'bootsnap', '>= 1.4.2', require: false
 gem 'dotenv'

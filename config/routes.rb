@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 Rails.application.routes.draw do
-  namespace :api, defaults: {format: :json} do
+  namespace :api do
     resources :cities, except: [:new, :edit]
     namespace :v1 do
       resources :users, params: :_email

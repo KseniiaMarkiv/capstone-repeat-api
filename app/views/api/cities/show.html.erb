@@ -1,0 +1,18 @@
+<h4>Hello from Show Page</h4>
+
+<p>
+  <strong>Name:</strong>
+  <%= @city.name %>
+</p>
+
+<p>
+  <strong>Create city:</strong>
+  <%= @city.created_at %>
+</p>
+
+<p>
+  <strong>Updated city:</strong>
+  <%= @city.updated_at %>
+</p>
+
+<%= link_to 'Back', api_cities_path %>

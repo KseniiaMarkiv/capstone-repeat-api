@@ -1,0 +1,26 @@
+<h4>Hello from Index Page</h4>
+
+<h1>Listing Cities</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Create city</th>
+      <th>Updated city</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @cities.each do |city| %>
+      <tr>
+        <td><%= city.name %></td>
+        <td><%= city.created_at %></td>
+        <td><%= city.updated_at %></td>
+        <td><%= link_to 'Show', api_cities_path(city) %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+

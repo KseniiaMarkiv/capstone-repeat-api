@@ -6,13 +6,13 @@ class Api::CitiesController < ApplicationController
   def index
     @cities = City.all
 
-    render json: @cities, status: :ok
+    # render json: @cities, status: :ok
   end
 
   # GET /cities/1
   # GET /cities/1.json
   def show
-    render json: @city, status: :ok
+    # render json: @city, status: :ok
   end
 
   # POST /cities

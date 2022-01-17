@@ -13,7 +13,7 @@ RSpec.describe "ApiDevelopments", type: :request do
       expect(object).to be_valid
       expect(City.find(object.id).name).to eq("test")
     end
-    xit "create RDBMS-backed API resource" do 
+    it "create RDBMS-backed API resource" do 
       object = create(:city, name: "test")
       expect(api_cities_path).to eq("/api/cities")
       get api_city_path(object.id)

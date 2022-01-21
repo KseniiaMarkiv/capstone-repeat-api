@@ -7,7 +7,6 @@ development:
       hosts:
         - <%= ENV['MONGO_HOST'] ||= "localhost:27017" %>
       options:
-       server_selection_timeout: 5
 
   options:
 test:

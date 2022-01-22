@@ -7,7 +7,7 @@ application up and running.
 
 Things I want to cover:
 
-### 1. Ruby version - ***"3.0.2"*** :point_left:	
+### 1. Ruby version - ***"2.7.0"*** :point_left:	
 ### 2. Rails version - ***"7.0.0"***
 
 ### 3. System dependencies

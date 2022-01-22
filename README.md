@@ -3,38 +3,38 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-**I created this app for Coursera assignment of 1 week 6 course. I just repeat all commands but at _new RoR version_.**
+**I created this app for Coursera assignment of 1 week 6 course. I just repeat all commands but at <em style='color:#1de9b6; font-size:130%; font-family: cursive, Lucida Calligraphy;'>new RoR version</em>.**
 
 Things I want to cover:
 
-#### Ruby version - ***3.0.2***
-#### Rails version - ***7.0.0***
+### 1. Ruby version - ***"3.0.2"*** :point_left:	
+### 2. Rails version - ***"7.0.0"***
 
-#### System dependencies
+### 3. System dependencies
 
-#### Configuration
+### 4. Configuration
 
-#### Database creation 
+### 5. Database creation 
 
-#### Database initialization - ***pg***
+### 6. Database initialization - ***"pg"***
 
-#### How to run the test suite
+### 7. How to run the test suite
 
-#### Services (job queues, cache servers, search engines, etc.)
+### 8. Services (job queues, cache servers, search engines, etc.)
 
-#### Deployment instructions
+### 9. Deployment instructions
 
-#### Errors and fixing their:
+### 10. Errors and fixing their:
 Errors showed in console after connection rails production server `$rails s –e production` :
-><span style="color:red"> Process exited with status 143
-WARN -- : MONGODB | Error checking Mongo::Error::SocketError: EOFError: end of file reached </span>
+><p style='color:red;'> Process exited with status 143 
+WARN -- : MONGODB | Error checking Mongo::Error::SocketError: EOFError: end of file reached </p>
 
 Fixed this:
 -	clear up cache in Browser;
 -	I wrong setup ENV - MONGODB_URI, which I added in heroku configs;
--	**I forgot added <span style="color:red">Procfile</span> with** *web:* **feature**;
+-	**I forgot added <span style='color:red;'>Procfile</span> with** *web:* **feature**; `web: bundle exec puma -C config/puma.rb`
 -	wait more time for `$rails s –e production` up
  
 I will add comment in Readme consistently. :wink:
 
-######If you have any questions, you can text me `<email>` *click here* :point_right: <mailto:ksenya.markiv@gmail.com>  `</email>`
+<p style='color:#747474; text-align:right;'> *If you have any questions, you can text me*</p> <p style='text-align:right;'>`<email>`<em style='color:#747474;'>click here</em> :point_right: [<em style='color:#1de9b6; font-size:130%; font-family: cursive, Lucida Calligraphy;'>Kseniia Markiv </em>](mailto:ksenya.markiv@gmail.com) `</email>`</p>

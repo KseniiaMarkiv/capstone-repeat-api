@@ -3,7 +3,7 @@
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
-**I created this app for Coursera assignment of 1 week 6 course. I just repeat all commands but at <em>new RoR version</em>.**
+**I created this app for Coursera assignment of 1 week 6 course. I just repeat all commands but at <em><u>new RoR version</u></em>.**
 
 Things I want to cover:
 
@@ -32,7 +32,10 @@ Errors showed in console after connection rails production server `$rails s –e
 
 Fixed this:
 -	clear up cache in Browser;
--	I wrong setup ENV - MONGODB_URI, which I added in heroku configs;
+-	I wrong setup ENV - MONGODB_URI, which I added in heroku configs; <br>
+*(It was old version writing string, when one was from MongoLab)*
+*but now I added 'mongodb+srv:' example*
+>heroku config:set MONGODB_URI="mongodb+srv://<dbuser>:<password>@freelancekm.ez9rb.mongodb.net/myFirstDatabase?retryWrites=true&w=majority" --remote staging
 -	I forgot added **Procfile** with *web:* feature; `web: bundle exec puma -C config/puma.rb`
 -	wait more time after command `$rails s –e production`
   ==================================================== 

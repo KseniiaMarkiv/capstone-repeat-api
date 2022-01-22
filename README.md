@@ -25,9 +25,9 @@ Things I want to cover:
 ### 9. Deployment instructions
 
 ### 10. Errors and fixing their:
-  ====================================================
+  ==================================================== <br>
 Errors showed in console after connection rails production server `$rails s –e production` :
->Process exited with status 143 
+>Process exited with status 143 <br>
 >WARN -- : MONGODB | Error checking Mongo::Error::SocketError: EOFError: end of file reached
 
 Fixed this:
@@ -39,4 +39,4 @@ Fixed this:
 
 I will add comment in Readme consistently. :wink:
 
-###### If you have any questions, you can text me `<email>` *click here* :point_right: *[Kseniia Markiv](mailto:ksenya.markiv@gmail.com)* `</email>`
+##### If you have any questions, you can text me `<email>` *click here* :point_right: *[Kseniia Markiv](mailto:ksenya.markiv@gmail.com)* `</email>`
